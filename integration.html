@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Integration</title>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@500&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@600&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="integration.css">
+        <link rel="stylesheet" href="sidenav.css">
+        <link rel="stylesheet" href="header-footer.css">
+    </head>
+    <body>
+        <header>
+            <!-- FIRST NAVIGATION BAR -->
+            <nav class="nav1">
+                <div class="nav1-logo">
+                    <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="">
+                </div>
+
+                <div class="nav1-1">
+                    <div class="nav1-icon">
+                        <span class="iconify iconify3" data-icon="fa-regular:user"></span>
+                    </div>
+                    <a href="signin.html" class="create-account">Sign In/Register</a>
+                </div>
+
+                <span class="iconify menu-open" data-icon="bx:menu"></span>
+                <span class="iconify menu-closed" data-icon="uim:multiply"></span>
+
+            </nav>
+            <!-- SECOND NAVIGATION BAR -->
+            <nav class="nav2">
+                <a href="index.html">Home</a>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+                    <option value="">All Categories</option>
+                    <optgroup label="Phones">
+                        <option value="">Techno</option>
+                        <option value="">Samsung</option>
+                        <option value="">Lenovo</option>
+                        <option value="">Nokia</option>
+                        <option value="">Xiaomi</option>
+                        <option value="">Infinix</option>
+                        <option value="">Oppo</option>
+                        <option value="">Apple</option>
+                    </optgroup>
+                    <optgroup label="Laptops">
+                        <option value="">Asus</option>
+                        <option value="">Lenovo</option>
+                        <option value="">Hp</option>
+                        <option value="">Dell</option>
+                        <option value="">Apple</option>
+                    </optgroup>
+                    <optgroup label="Electronics"></optgroup>
+                </select>
+                <a href="aboutPage.html">About us</a>
+                <a href="contact.html">Contact</a>
+                <a href="profilecard.html" class="create-account2">User Profile</a>
+                <a href="signin.html" class="create-account2">Sign in/Register</a>
+                <a href="support.html">Support</a>
+
+
+            </nav>
+            <!-- END OF HEADER -->
+        </header>
+
+        <main>
+            <!-- SIDE NAV -->
+            <div class="sidenav">
+                <a href="documentation.html" id="home">Home</a>
+                <a href="integration.html">Integration Guides</a>
+                <a href="authentication.html">Authentication</a>
+                <a href="merchant.html">Merchants</a>
+                <a href="developer.html">Developer Tools</a>
+            </div>
+
+            <div class="main-page">
+                <div class="main">
+                    <div class="int">
+                        <h1 class="int1" id="int1">Integration Guides</h1>
+                        <hr>
+                    </div>
+                    <div class="paragraph1">
+                        <p>Haggle is a platform that allows users to compare prices of products from different e-commerce merchants. 
+                                                                            Haggle is accessible to both authenticated and unauthenticated users, but with the authenticated users having full access to the platform.</p>
+                    </div>
+
+                    <div class="user1">
+                        <h3 class="how-haggle-works" id="how-haggle-works">How does Haggle work?</h3>
+                        <hr>
+                        <p class="userflow1">Haggle goes to various merchants/ e-commerce stores and gets aggregated product based on customer reviews and ratings and price, and displays them to you.
+                                                                            When you use the search box to search for a product, or select a product through the category section, your request/function will be sent to the database,
+                                                                            which then releases the data of the product you searched, or the category you selected, to you. The data from the various available merchants have been scraped
+                                                                            using specific scraping tools. See SDKs and Plugins for more info on the scraping tools.</p>
+                    </div>
+                    <div class="user2">
+                        <h3 class="using-haggle" id="using-haggle">Using Haggle</h3>
+                        <hr>
+                        <p class="userflow2">To access the complete features of haggle, authentication is required for all users. See Authentication for steps on how to get authenticated.</p>
+                    </div>
+
+                    <div class="user3">
+                        <h3 class="navigating" id="navigating">
+                            Navigating through Haggle</h3>
+                        <hr>
+                        <p class="navigate1">Haggle has a very friendly user interface which makes navigating through the platform easy. Below are some of the haggle navigation features</p>
+                        <ol>
+                            <li>You can click on the icon on the top right corner of your screen to access your dashboard. You'll see you registered details on your dashboard. You can also edit
+                                                                                        and upload a profile photo.</li>
+                            <li>
+                                On the navigation bar of everypage, there are options and features from which you can select by just clicking on them, and you'll be redirected to their pages. 
+                                                                                        Some features on the nav bar include the search box, the category section etc</li>
+                            <li>Search - The search bar is found at the top of the page and is used to navigate through products. When you input a keyword into the search bar,
+                                                                                        haggle runs a filter function, and only displays products with that keyword you searched for or with keywords similar to it.</li>
+                            <li>
+                                Category - Haggle has a category section on the top of the page where you can select from the various available categories.
+                                                                                        The category section eases navigation through the platform as options selected by you are what will be displayed.</li>
+                            <li>Compare Prices - After you select a product, you'll then be taken to the comparison page where you can compare prices 
+                                                                                            of that particular product from different merchants. In this case, an unauthenticated user only gets to view prices of 2 merchants, while an authenticated user gets full access to all prices.</li>
+                            <li>
+                                Go to Shop - After comparison, you can decide to go directly to the product page of the selected merchant where you can make purchase. A ref link that leads to the purchase page of a product
+                                                                                        is available on every product page on haggle. Users must be authenticated to use this feature.</li>
+                            <li>
+                                Comments and Share - You can share a product page link directly to your social media handles, or send them to third parties via our email feature. You can also make comments and read other prople's comment
+                                                                                        in the comment section under each product, to know other users thought about a particular product or service.</li>
+                            <li>To log out, navigate to your dashboard and scroll up, you'll see a log out button. Click it and you will be logged out of haggle</li>
+
+                        </ol>
+                        <br>
+                    </div>
+                </div>
+
+
+                <!-- SIDE NAV -->
+                <div class="sidenav1">
+                    <h4 class="page">On this page</h4>
+                    <a href="#int1">Integration Guides</a>
+                    <a href="#how-haggle-works">How Haggle Works</a>
+                    <a href="#using-haggle">Using Haggle</a>
+                    <a href="#navigating">Navigating through Haggle</a>
+                </div>
+
+            </div>
+
+            <!-- FOOTER SECTION -->
+            <div class="footer1">
+                <div class="questions">
+                    <a href="feedback.html">
+                        <p class="p4">Have any questions?</p>
+                    </a>
+                    <p class="p5">Get in touch if you have any questions or need help with integrating
+                                                                                        through Haggle.
+                    </p>
+                </div>
+                <div class="tutorials">
+                    <a href="">
+                        <p class="p4">
+                            <span class="vid">
+                                Video tutorials</span>
+                        </p>
+                    </a>
+                    <p class="p6">Checkout our YouTube channel for tutorials on how to migrate through the Haggle app</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <!-- FIRST FOOTER STARTS -->
+            <div
+                class="news-letter">
+                <!-- NEWS LETTER SECTION -->
+                <div class="news-letter-details">
+                    <h5>Newsletter</h5>
+                    <small>To know more about new innovations at Haggle
+                    </small>
+                </div>
+                <div class="news-letter-email">
+                    <div class="email-holder">
+                        <span class=" iconify iconify1 " data-icon="fa-regular:envelope"></span>
+                        <input type="email" name="" id="" placeholder="Enter your email " class="email-input">
+                    </div>
+
+                    <button id="subscribe">Subscribe</button>
+                </div>
+            </div>
+            <!-- BLUE FOOTER DETAILS -->
+            <div class="first-footer-details">
+                <ul class="footer-ul">
+                    <li class="title">About</li>
+                    <li class="footer-tagline">Leading the innovation in
+                        <br>
+                        online customer shopping experience
+                        <br>
+                        in Nigeria</li>
+                    <a href="blog.html">Blog</a>
+                </ul>
+                <ul class="footer-ul">
+                    <li class="title">Quick Links</li>
+                    <li>
+                        <a href="topdeals.html">Top deals</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="team.html">Meet Our Team</a>
+                    </li>
+                    <li>
+                        <a href="documentation.html">Documentation</a>
+                    </li>
+                </ul>
+                <div class="socials">
+                    <ul class="footer-ul">
+                        <li class="title">Support</li>
+                        <li>
+                            <a href="">
+                                <span class=" iconify iconify2" data-icon="fa-regular:envelope"></span>
+                                info@haggle.com.ng</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="iconify iconify2" data-icon="carbon:phone"></span>080-Haggle</a>
+                        </li>
+                        <div></ul>
+                        <div class="socials-icon">
+                            <div class="icon">
+                                <span class="iconify" data-icon="la:facebook-square" style="font-size:28px"></span>
+                            </div>
+                            <div class="icon">
+                                <span class="iconify" data-icon="line-md:twitter" style="font-size:28px"></span>
+                            </div>
+                            <div class="icon">
+                                <span class="iconify" data-icon="la:instagram" style="font-size:28px"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- SECOND FOOTER STARTS -->
+                <div class="second-footer">
+                    <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="" class="footer-logo">
+                    <p>&copy; 2022 Team 29 Nigeria. All rights reserved powered by Zuri-intership.com</p>
+                </div>
+            </footer>
+
+
+            <!-- <script src="comparison.js"></script> -->
+            <!-- <script src="documentation.js"></script> -->
+            <script src="header-footer.js"></script>
+        </body>
+    </body>
+</html>

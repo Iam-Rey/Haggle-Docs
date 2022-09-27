@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@500&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@600&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="authentication.css">
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="header-footer.css">
+</head>
+<body>
+    <header>
+        <!-- FIRST NAVIGATION BAR -->
+        <nav class="nav1">
+            <div class="nav1-logo">
+                <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="">
+            </div>
+
+            <div class="nav1-1">
+                <div class="nav1-icon">
+                    <span class="iconify iconify3" data-icon="fa-regular:user"></span>
+                </div>
+                <a href="signin.html" class="create-account">Sign In/Register</a>
+            </div>
+
+            <span class="iconify menu-open" data-icon="bx:menu"></span>
+            <span class="iconify menu-closed" data-icon="uim:multiply"></span>
+
+        </nav>
+        <!-- SECOND NAVIGATION BAR -->
+        <nav class="nav2">
+            <a href="index.html">Home</a>
+            <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+                <option value="">All Categories</option>
+                <optgroup label="Phones">
+                    <option value="">Techno</option>
+                    <option value="">Samsung</option>
+                    <option value="">Lenovo</option>
+                    <option value="">Nokia</option>
+                    <option value="">Xiaomi</option>
+                    <option value="">Infinix</option>
+                    <option value="">Oppo</option>
+                    <option value="">Apple</option>
+                </optgroup>
+                <optgroup label="Laptops">
+                    <option value="">Asus</option>
+                    <option value="">Lenovo</option>
+                    <option value="">Hp</option>
+                    <option value="">Dell</option>
+                    <option value="">Apple</option>
+                </optgroup>
+                <optgroup label="Electronics"></optgroup>
+            </select>
+            <a href="aboutPage.html">About us</a>
+            <a href="contact.html">Contact</a>
+            <a href="profilecard.html" class="create-account2">User Profile</a>
+            <a href="signin.html" class="create-account2">Sign in/Register</a>
+            <a href="support.html">Support</a>
+
+
+        </nav>
+        <!-- END OF HEADER -->
+    </header>
+
+<main>
+ <!-- SIDE NAV -->
+ <div class="sidenav">
+    <a href="documentation.html" id="home">Home</a>
+    <a href="integration.html">Integration Guides</a>
+    <a href="authentication.html">Authentication</a>
+    <a href="merchant.html">Merchants</a>
+    <a href="developer.html">Developer Tools</a>
+</div>
+
+    <div class="main-page">
+        <div class="main">
+            <div class="auth">
+                <h1 class="auth1" id="auth1">Authentication</h1>
+                <hr>
+            </div>
+            <div class="paragraph1">
+                <p>Haggle allows both the authenticated and unauthenticated user access to the platform with the authenticated user having 
+                    full access to the platform.
+                    A user is required to be authenticated before granted full access to the platform.  </p>
+            </div>
+        
+            <div class="user1">
+                <h3 class="unauthenticated" id="unauthenticated">Unauthenticated user (User flow) </h3>
+                <hr>
+                <p class="userflow1">When an unauthenticated user visits the landing page, the user would be able to view and interact basically with the page.
+                    The user would be able to browse through available products by using the search filter function or by using the category section for easy navigation through products.
+                    When the unauthenticated user selects a product, the user will then be directed to the product page that’ll contain the specific product from different merchants with their prices.
+                    The unauthenticated user will only be able to view and compare prices from 2 different merchants. 
+                    On request to “view more prices", the unauthenticated user will get redirected to the login page.</p>
+            </div>
+            <div class="user2">
+                <h3 class="authenticated" id="authenticated">Authenticated User (User flow)</h3>
+                <hr>
+                <p class="userflow2">After a user becomes authenticated, the user gets full access to the platform. The user will be able to browse through available
+                    products and get price comparisons from all available platforms. After authentication, several options like comment boxes and the share options that 
+                    are not available to the unauthenticated user will become available. 
+                    The authenticated user will be able to comment directly under products and prices.
+                    Also available on the product page of the authenticated user will be the link to the purchase page of the product from the selected platform. 
+                    The user will be redirected to the e-commerce platform for product purchase once the link is clicked.</p>
+            </div>
+        
+            <div class="user3">
+                <h2 class="auth2" id="auth2">Authentication Guide</h2>
+                <hr>
+                <h4 class="login1">Login</h4>
+                <ol>
+                    <li>Click on Sign In/Register on the top right corner of the page, It'll take you to the login page.</li>
+                    <li>In the login page, you'll be required to input your username and your password.</li>
+                    <li>After inputting your details, click the login button below, and you'll be logged in.</li>
+                    <li>You can then interact with the page freely as you'd have been authenticated.</li>
+                </ol>
+                <br>
+                <h4 class="signup1">Sign Up</h4>
+                <ol>
+                    <li>Click on Sign In/Register on the top right corner of the page, It'll take you to the login page.</li>
+                    <li>Click on the sign up option beside the login option and you'll be taken to the sign up page.</li>
+                    <li>At the sign up page, you'll be required to input your First Name, Last Name, your email, username and create a password which
+                        will be required of you upon every new attempt to login later.</li>
+                    <li>After inputting your details, click the sign up button below and you'll be registered as a user in Haggle database.</li>
+                    <li>On successful registeration, you'll then be redirected to the login page, where you'll be required to login with your username and password.</li>
+                </ol>
+            </div>
+        </div>
+    
+
+        <!-- SIDE NAV -->
+        <div class="sidenav1">
+            <h4 class="page">On this page</h4>
+            <a href="#auth1">Authentication</a>
+            <a href="#unauthenticated">Unauthenticated user</a>
+            <a href="#authenticated">Authenticated user</a>
+            <a href="#auth2">Authentication Guide</a>
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div class="footer1">
+        <div class="questions">
+            <a href="feedback.html">
+                <p class="p4">Have any questions?</p>
+            </a>
+            <p class="p5">Get in touch if you have any questions or need help with integrating
+                                        through Haggle.
+            </p>
+        </div>
+        <div class="tutorials">
+            <a href="">
+                <p class="p4">
+                    <span class="vid">
+                        Video tutorials</span>
+                </p>
+            </a>
+            <p class="p6">Checkout our YouTube channel for tutorials on how to migrate through the Haggle app</p>
+        </div>
+    </div>
+</main>
+
+  <!-- FOOTER -->
+  <footer>
+    <!-- FIRST FOOTER STARTS -->
+               <div class="news-letter">
+                   <!-- NEWS LETTER SECTION -->
+                   <div class="news-letter-details">
+                       <h5>Newsletter</h5>
+                       <small>To know more about new innovations at Haggle </small>
+                   </div>
+                   <div class="news-letter-email">
+                       <div class="email-holder">
+                           <span class=" iconify iconify1 " data-icon="fa-regular:envelope"></span>
+                           <input type="email" name="" id="" placeholder="Enter your email " class="email-input">
+                       </div>
+                       
+                       <button id="subscribe">Subscribe</button>
+                   </div>
+               </div>
+               <!-- BLUE FOOTER DETAILS -->
+               <div class="first-footer-details">
+                   <ul class="footer-ul">
+                       <li class="title">About</li>
+                       <li class="footer-tagline">Leading the innovation in <br> online customer shopping experience <br> in Nigeria</li>
+                       <a href="blog.html">Blog</a>
+                   </ul>
+                   <ul class="footer-ul">
+                       <li class="title">Quick Links</li>
+                       <li> <a href="topdeals.html">Top deals</a></li>
+                       <li> <a href="faq.html">FAQ</a></li>
+                       <li> <a href="privacy.html">Privacy policy</a></li>
+                       <li> <a href="team.html">Meet Our Team</a></li>
+                       <li> <a href="documentation.html">Documentation</a></li>
+                   </ul>
+                   <div class="socials">
+                       <ul class="footer-ul">
+                           <li class="title">Support</li>
+                           <li > <a href=""><span class=" iconify iconify2" data-icon="fa-regular:envelope"></span> info@haggle.com.ng</a></li>
+                           <li > <a href=""><span class="iconify iconify2" data-icon="carbon:phone"></span>080-Haggle</a></li>
+                           <div>
+
+                       </ul>
+                       <div class="socials-icon">
+                           <div class="icon"><span class="iconify" data-icon="la:facebook-square" style="font-size:28px"></span></div>
+                           <div class="icon"><span class="iconify" data-icon="line-md:twitter" style="font-size:28px"></span></div>
+                           <div class="icon"><span class="iconify" data-icon="la:instagram" style="font-size:28px"></span></div>
+                           
+                       </div>
+                   </div> 
+               </div>
+   <!-- SECOND FOOTER STARTS -->
+   <div class="second-footer">
+       <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="" class="footer-logo">
+       <p>&copy; 2022 Team 29 Nigeria. All rights reserved powered by Zuri-intership.com</p>
+   </div>
+</footer>
+
+
+    <!-- <script src="comparison.js"></script> -->
+    <!-- <script src="documentation.js"></script> -->
+    <script src="header-footer.js"></script>    
+</body>
+</html>

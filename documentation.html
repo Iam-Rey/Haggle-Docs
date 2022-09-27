@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@500&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Inter:wght@600&family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/773c20f948.js" crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <link rel="shortcut icon" href="https://i.postimg.cc/kM10QcSD/hagglefavicon.png" type="">
+        <link rel="stylesheet" href="documentation.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="comparison.css">
+        <!-- <link rel="stylesheet" href="accordion.css"> -->
+        <link rel="stylesheet" href="sidenav.css">
+        <link rel="stylesheet" href="header-footer.css">
+    </head>
+    <body>
+        <header>
+            <!-- FIRST NAVIGATION BAR -->
+            <nav class="nav1">
+                <div class="nav1-logo">
+                    <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="">
+                </div>
+
+                <div class="nav1-1">
+                    <div class="nav1-icon">
+                        <span class="iconify iconify3" data-icon="fa-regular:user"></span>
+                    </div>
+                    <a href="signin.html" class="create-account">Sign In/Register</a>
+                </div>
+
+                <span class="iconify menu-open" data-icon="bx:menu"></span>
+                <span class="iconify menu-closed" data-icon="uim:multiply"></span>
+
+            </nav>
+            <!-- SECOND NAVIGATION BAR -->
+            <nav class="nav2">
+                <a href="index.html">Home</a>
+                <select name="links" id="" size="1" onchange="window.location.href=this.value;">
+                    <option value="">All Categories</option>
+                    <optgroup label="Phones">
+                        <option value="">Techno</option>
+                        <option value="">Samsung</option>
+                        <option value="">Lenovo</option>
+                        <option value="">Nokia</option>
+                        <option value="">Xiaomi</option>
+                        <option value="">Infinix</option>
+                        <option value="">Oppo</option>
+                        <option value="">Apple</option>
+                    </optgroup>
+                    <optgroup label="Laptops">
+                        <option value="">Asus</option>
+                        <option value="">Lenovo</option>
+                        <option value="">Hp</option>
+                        <option value="">Dell</option>
+                        <option value="">Apple</option>
+                    </optgroup>
+                    <optgroup label="Electronics"></optgroup>
+                </select>
+                <a href="aboutPage.html">About us</a>
+                <a href="contact.html">Contact</a>
+                <a href="profilecard.html" class="create-account2">User Profile</a>
+                <a href="signin.html" class="create-account2">Sign in/Register</a>
+                <a href="support.html">Support</a>
+
+
+            </nav>
+            <!-- END OF HEADER -->
+        </header>
+
+        <main>
+            <!-- SIDE NAV -->
+            <div class="sidenav">
+                <div class="nav-logo">
+                    <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="" class="logo">
+                </div>
+                <a href="documentation.html" id="home" class="options">Home</a>
+                <a href="integration.html" class="options">Integration Guides</a>
+                <a href="authentication.html" class="options">Authentication</a>
+                <a href="merchant.html" class="options">Merchants</a>
+                <a href="developer.html" class="options">Developer Tools</a>
+            </div>
+
+
+            <div class="main">
+                <div class="heading">
+                    <h2 class="h1">Welcome to Haggle Documentation</h2>
+                </div>
+
+                <div class="row1">
+                    <div class="col1">
+                        <a href="comparison.html"><img src="https://i.postimg.cc/NfCpJfYM/Quick-Access.jpg" alt="" class="image1"></a>
+                        <div>
+                            <a href="comparison.html" class="quickstart">Quickstart</a>
+                            <p class="p1">Let's get you setup and ready to compare prices</p>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <a href="integration.html"><img src="https://i.postimg.cc/mrf3JPnb/Integration.jpg" alt=""></a>
+                        <div>
+                            <a href="integration.html">Integration</a>
+                            <p class="p1">Using Haggle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <div class="col3">
+                        <a href="authentication.html"><img src="https://i.postimg.cc/9QGSZ80S/Authentication.jpg" alt="" class="image1"></a>
+                        <div>
+                            <a href="authentication.html" class="authentication">Authentication</a>
+                            <p class="p2">Get authenticated to enjoy access to the full platform</p>
+                        </div>
+                    </div>
+                    <div class="col4">
+                        <a href="merchant.html"><img src="https://i.postimg.cc/mkzpDVKm/Merchants.jpg" alt=""></a>
+                        <div>
+                            <a href="merchant.html">Merchants</a>
+                            <p class="p2">See our merchants</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row3">
+                    <div class="col5">
+                        <a href="developer.html"><img src="https://i.postimg.cc/D0s3d2xp/SDKs.jpg" alt=""></a>
+                        <div>
+                            <div>
+                                <a href="developer.html" class="sdk">Developer Tools</a>
+                                <p class="p3">Tools for development and management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER SECTION -->
+                <div class="footer1">
+                    <div class="questions">
+                        <a href="feedback.html">
+                            <p class="p4">Have any questions?</p>
+                        </a>
+                        <p class="p5">Get in touch if you have any questions or need help with integrating
+                                                                                            through Haggle.
+                        </p>
+                    </div>
+                    <div class="tutorials">
+                        <a href="">
+                            <p class="p4">
+                                <span class="vid">
+                                    Video tutorials</span>
+                            </p>
+                        </a>
+                        <p class="p6">Checkout our YouTube channel for tutorials on how to migrate through the Haggle app</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+         <!-- FOOTER -->
+      <footer>
+        <!-- FIRST FOOTER STARTS -->
+                   <div class="news-letter">
+                       <!-- NEWS LETTER SECTION -->
+                       <div class="news-letter-details">
+                           <h5>Newsletter</h5>
+                           <small>To know more about new innovations at Haggle </small>
+                       </div>
+                       <div class="news-letter-email">
+                           <div class="email-holder">
+                               <span class=" iconify iconify1 " data-icon="fa-regular:envelope"></span>
+                               <input type="email" name="" id="" placeholder="Enter your email " class="email-input">
+                           </div>
+                           
+                           <button id="subscribe">Subscribe</button>
+                       </div>
+                   </div>
+                   <!-- BLUE FOOTER DETAILS -->
+                   <div class="first-footer-details">
+                       <ul class="footer-ul">
+                           <li class="title">About</li>
+                           <li class="footer-tagline">Leading the innovation in <br> online customer shopping experience <br> in Nigeria</li>
+                           <a href="blog.html">Blog</a>
+                       </ul>
+                       <ul class="footer-ul">
+                           <li class="title">Quick Links</li>
+                           <li> <a href="topdeals.html">Top deals</a></li>
+                           <li> <a href="faq.html">FAQ</a></li>
+                           <li> <a href="privacy.html">Privacy policy</a></li>
+                           <li> <a href="team.html">Meet Our Team</a></li>
+                           <li> <a href="documentation.html">Documentation</a></li>
+                       </ul>
+                       <div class="socials">
+                           <ul class="footer-ul">
+                               <li class="title">Support</li>
+                               <li > <a href=""><span class=" iconify iconify2" data-icon="fa-regular:envelope"></span> info@haggle.com.ng</a></li>
+                               <li > <a href=""><span class="iconify iconify2" data-icon="carbon:phone"></span>080-Haggle</a></li>
+                               <div>
+   
+                           </ul>
+                           <div class="socials-icon">
+                               <div class="icon"><span class="iconify" data-icon="la:facebook-square" style="font-size:28px"></span></div>
+                               <div class="icon"><span class="iconify" data-icon="line-md:twitter" style="font-size:28px"></span></div>
+                               <div class="icon"><span class="iconify" data-icon="la:instagram" style="font-size:28px"></span></div>
+                               
+                           </div>
+                       </div> 
+                   </div>
+       <!-- SECOND FOOTER STARTS -->
+       <div class="second-footer">
+           <img src="https://i.postimg.cc/MZ7cXnfs/footer-logo.png" alt="" class="footer-logo">
+           <p>&copy; 2022 Team 29 Nigeria. All rights reserved powered by Zuri-intership.com</p>
+       </div>
+   </footer>
+
+
+        <!-- <script src="comparison.js"></script> -->
+        <!-- <script src="documentation.js"></script> -->
+        <script src="header-footer.js"></script>
+    </body>
+</html>
